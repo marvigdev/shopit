@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header';
+import ProductList from './components/Product/ProductList';
+import QueryInput from './components/QueryInput';
+import { CartStateProvider } from './context/CartContext';
+import { SearchStateProvider } from './context/SearchContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartStateProvider>
+      <Header />
+      <div className='p-2 md:w-3/5 xl:w-3/5 m-auto'>
+        <SearchStateProvider>
+          <QueryInput />
+          <ProductList />
+        </SearchStateProvider>
+      </div>
+    </CartStateProvider>
   );
 }
 

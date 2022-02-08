@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# shopit
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o repositório do `shopit`, uma aplicação feita em `React`, `Typescript` e `TailwindCSS`.
 
-## Available Scripts
+Criado por [Marcos Vinicius](https://www.linkedin.com/in/marvigdev).
 
-In the project directory, you can run:
+## Sobre
 
-### `yarn start`
+`shopit` é uma aplicação simples, que lista itens da [API do Mercado Livre](https://developers.mercadolivre.com.br/), e o usuário pode adicionar estes itens para um `carrinho`, onde ele pode ver a soma dos itens como também pode copiar os dados da sua "compra". Usuários também podem utilizar o campo de busca para filtrar por itens específicos.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## As tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Este projeto é inspirado no projeto `TrybeShopping`, um projeto desenvolvido por alunos da [Trybe](https://www.betrybe.com), também utilizando a API do Mercado Livre.
 
-### `yarn test`
+Decidi recriar a aplicação utilizando (https://reactjs.org)[React], por ser uma biblioteca amplamente utilizada e simples de utilizar. Usei [TailwindCSS](https://tailwindcss.com/) por ser uma forma rápida de estilizar minha aplicação, sem me preocupar com arquivos .css ou nomear classes. Para finalizar, utilizei [Typescript](https://www.typescriptlang.org/) por ser quase obrigatório no ambiente Javascript, evitando erros simples e acelerando o desenvolvimento da aplicação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Aprendizados
 
-### `yarn build`
+Aprendi `Context API`, uma ótima opção para lidar com estados utilizados por vários componentes, criando uma "fonte" de dados e podendo manipulá-los pelo `context`.
+Desenvolvi também minha noção de componetização, tentando ao máximo criar componentes reutilizáveis e descritivos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## To-do
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ ] Salvar carrinho no `localStorage`
+- [ ] Resolver a estilização quando as imagens vindas da API possuem alturas diferentes
+- [ ] Implementar os filtros que a API do Mercado Livre oferece
+- [ ] Listar categorias
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Obrigado por ler :)
